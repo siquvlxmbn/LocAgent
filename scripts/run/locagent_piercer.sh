@@ -27,7 +27,7 @@ REPO_URL=$1
 CONFIG_FILE=$2
 OUTPUT_DIR=${3:-./results}
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 
 echo -e "${GREEN}========================================${NC}"
 echo -e "${GREEN}LocAgent 代码穿刺工具${NC}"

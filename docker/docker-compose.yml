@@ -3,7 +3,7 @@ version: '3.8'
 services:
   locagent:
     build:
-      context: .
+      context: ..
       dockerfile: docker/Dockerfile
     container_name: locagent_piercer
     environment:
@@ -11,9 +11,9 @@ services:
       - LITELLM_API_KEY=${LITELLM_API_KEY}
       - PYTHONUNBUFFERED=1
     volumes:
-      - ./results:/app/results
-      - ./configs:/app/configs
-      - ./logs:/app/logs
+      - ../results:/app/results
+      - ../configs:/app/configs
+      - ../logs:/app/logs
     working_dir: /app
     command: scripts/run/locagent_piercer.py --repo_url ${REPO_URL} --config_file /app/configs/${CONFIG_FILE} --output_dir /app/results
     networks:
