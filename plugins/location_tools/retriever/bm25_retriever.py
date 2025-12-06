@@ -79,7 +79,7 @@ def build_code_retriever_from_repo(repo_path,
         ],
         file_metadata=file_metadata_func,
         filename_as_id=True,
-        required_exts=['.py'],  # TODO: Shouldn't be hardcoded and filtered
+        required_exts=None,  # include all supported text/code files (not hardcoded to .py)
         recursive=True,
     )
     docs = reader.load_data()
