@@ -1,0 +1,25 @@
+{
+  "repo_url": "https://github.com/UXARRAY/uxarray",
+  "repo_name": "uxarray",
+  "dataset_name": "uxarray_custom",
+  "model": "litellm_proxy/claude-sonnet-4-20250514",
+  "eval_n_limit": 1,
+  "num_processes": 1,
+  "use_function_calling": true,
+  "simple_desc": true,
+  "queries": [
+    {
+      "query": "What is UXARRAY and what are its main modules?",
+      "category": "overview"
+    },
+    {
+      "query": "How does the coordinate system handling work in UXARRAY?",
+      "category": "core_functionality"
+    },
+    {
+      "query": "Where are the grid data structures defined and used?",
+      "category": "data_structures"
+    }
+  ],
+  "comment": "UXARRAY项目穿刺配置"
+}

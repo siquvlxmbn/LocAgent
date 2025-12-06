@@ -1,0 +1,29 @@
+{
+  "repo_url": "https://github.com/cloudlinux/libcare",
+  "repo_name": "libcare",
+  "dataset_name": "libcare_custom",
+  "model": "litellm_proxy/claude-sonnet-4-20250514",
+  "eval_n_limit": 1,
+  "num_processes": 1,
+  "use_function_calling": true,
+  "simple_desc": true,
+  "queries": [
+    {
+      "query": "How does libcare apply patches to a running process using ptrace?",
+      "category": "patch_application"
+    },
+    {
+      "query": "Where is the main binary patch building logic? What are the key components?",
+      "category": "patch_building"
+    },
+    {
+      "query": "How are patches stored in ELF sections and applied at runtime?",
+      "category": "patch_storage"
+    },
+    {
+      "query": "What is the role of the doctor and patient in the patching process?",
+      "category": "core_concepts"
+    }
+  ],
+  "comment": "libcare项目穿刺配置 - 用于分析Live Patch更新系统"
+}
